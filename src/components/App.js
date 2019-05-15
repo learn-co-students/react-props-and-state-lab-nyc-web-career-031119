@@ -14,7 +14,6 @@ class App extends React.Component {
   };
 
   onAdoptPet = petId => {
-    const id   = petId.target.id;
     const pets = this.state.pets.map(pet => {
       if (pet.id === petId) {
         pet.isAdopted = true;
